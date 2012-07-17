@@ -1,0 +1,88 @@
+<html>
+<head>
+<title> Hiska Mask Test </title>
+<script src="jquery-1.4.4.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="jquery.hiskainput.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function() {
+        $.hiska.definitions['~'] = "[+-]";
+		$("#flo1").hiska();
+		$("#flo2").hiska();
+		$("#flo3").hiska();
+		$("#flo4").hiska();
+		$("#flo5").hiska();
+		$("#flo6").hiska();
+		$("#flo7").hiska();
+        $("#date").hiska();
+        $("#phone").hiska();
+        $("#phoneExt").hiska();
+        $("#iphone").hiska();
+        $("#tin").hiska();
+        $("#ssn").hiska();
+        $("#product").hiska();
+        $("#eyescript").hiska();
+        $("#po").hiska();
+		$("#pct").hiska();
+		$("#ent1").hiska();
+		$("#ent2").hiska();
+		$("#ent3").hiska();
+		$("#ent4").hiska();
+		$("#ent5").hiska();
+		$("#ent6").hiska();
+		$("#ent7").hiska();
+		$("#ent8").hiska();
+		$("#ent9").hiska();
+		$("#ent10").hiska();
+		$("#ent11").hiska();
+		$("#ent12").hiska();
+		$("#ent13").hiska();
+		$("#ent14").hiska();
+		$("#ent15").hiska();
+		$("#ent16").hiska();
+		$("#ent17").hiska();
+		$("#cade").hiska();
+    });
+	
+</script>
+</head>
+<body>
+<table>
+<tr><td>Float</td><td>			<input id="flo1" 		type="text" tabindex="10" mask="int1"	holder_="" placeholder_="9"	max="100"				dec="1"	/>			</td><td>100.0</td></tr>
+<tr><td>Float</td><td>			<input id="flo2" 		type="text" tabindex="10" mask="int1"	holder_="" placeholder_="9"	max="1000"				dec="2"	/>			</td><td>1000.00</td></tr>
+<tr><td>Float</td><td>			<input id="flo3" 		type="text" tabindex="10" mask="int1"	holder_="" placeholder_="9"	max="10000"				dec="3"	/>			</td><td>10000.000</td></tr>
+<tr><td>Float</td><td>			<input id="flo4" 		type="text" tabindex="10" mask="int1"	holder_="" placeholder_="9"	max="100000"			dec="4"	/>			</td><td>100000.0000</td></tr>
+<tr><td>Float</td><td>			<input id="flo5" 		type="text" tabindex="10" mask="int1"	holder_="" placeholder_="9"	max="1000000"			dec="5"	/>			</td><td>1000000.00000</td></tr>
+<tr><td>Float</td><td>			<input id="flo6" 		type="text" tabindex="10" mask="int1"	holder_="" placeholder_="9"	max="100000000"			dec="6"	/>			</td><td>100000000.000000</td></tr>
+<tr><td>Float</td><td>			<input id="flo7" 		type="text" tabindex="10" mask="int1"	holder_="" placeholder_="9"	max="1000000000"		dec="7"	/>			</td><td>1000000000.0000000</td></tr>
+<tr><td>Date</td><td>			<input id="date" 		type="text"	tabindex="1"  mask="date"	holder_="" placeholder_="99/99/9999"					min="2011" 	max="2013"	/>			</td><td>99/99/9999</td></tr>
+<tr><td>Phone</td><td>			<input id="phone" 		type="text" tabindex="2"  mask="mask"	holder_="" placeholder_="(999) 999-9999"													/>			</td><td>(999) 999-9999</td></tr>
+<tr><td>Phone + Ext</td><td>	<input id="phoneExt" 	type="text" tabindex="2"  mask="mask"	holder_="" placeholder_="(999) 999-9999? x99999"											/>			</td><td>(999) 999-9999? x99999</td></tr>
+<tr><td>Int'l Phone</td><td>	<input id="iphone" 		type="text" tabindex="2"  mask="mask"	holder_="" placeholder_="+33 999 999 999"													/>			</td><td>+33 999 999 999</td></tr>
+<tr><td>Tax ID</td><td>			<input id="tin" 		type="text" tabindex="3"  mask="mask"	holder_="" placeholder_="99-9999999"														/>			</td><td>99-9999999</td></tr>
+<tr><td>SSN</td><td>			<input id="ssn" 		type="text" tabindex="4"  mask="mask"	holder_="" placeholder_="999-99-9999"														/>			</td><td>999-99-9999</td></tr>
+<tr><td>Product Key</td><td>	<input id="product" 	type="text" tabindex="5"  mask="mask"	holder_="" placeholder_="a*-999-a999"														/>			</td><td>a*-999-a999</td></tr>
+<tr><td>Eye Script</td><td>		<input id="eyescript" 	type="text" tabindex="6"  mask="mask"	holder_="" placeholder_="~9.99 ~9.99 999"													/>			</td><td>~9.99 ~9.99 999</td></tr>
+<tr><td>Purchase Order</td><td>	<input id="po" 			type="text" tabindex="7"  mask="mask"	holder_="" placeholder_="aaa-999-***"														/>			</td><td>aaa-999-***</td></tr>
+<tr><td>Percent</td><td>		<input id="pct" 		type="text" tabindex="8"  mask="int"	holder_="" placeholder_="99%" max="100"					min="5"			/>			</td><td>99%</td></tr>
+<tr><td>Entero</td><td>			<input id="ent1" 		type="text" tabindex="9"  mask="int1"	holder_="" placeholder_="9"	max="9"						min="2"			/>			</td><td>1</td></tr>
+<tr><td>Entero</td><td>			<input id="ent2" 		type="text" tabindex="9"  mask="int1"	holder_="" placeholder_="9"	max="10"					min="3" 			/>			</td><td>10</td></tr>
+<tr><td>Entero</td><td>			<input id="ent3" 		type="text" tabindex="9"  mask="int1"	holder_="" placeholder_="9"	max="100"					min="11" 			/>			</td><td>100</td></tr>
+<tr><td>Entero</td><td>			<input id="ent4" 		type="text" tabindex="9"  mask="int1"	holder_="" placeholder_="9"	max="1000"					min="20" 			/>			</td><td>1000</td></tr>
+<tr><td>Entero</td><td>			<input id="ent5" 		type="text" tabindex="9"  mask="int1"	holder_="" placeholder_="9"	max="10000"					min="2000" 			/>			</td><td>10000</td></tr>
+<tr><td>Entero</td><td>			<input id="ent6" 		type="text" tabindex="9"  mask="int1"	holder_="" placeholder_="9"	max="100000"				min="3000" 			/>			</td><td>100000</td></tr>
+<tr><td>Entero</td><td>			<input id="ent7" 		type="text" tabindex="9"  mask="int1"	holder_="" placeholder_="9"	max="1000000"				min="30000"			/>			</td><td>1000000</td></tr>
+<tr><td>Entero</td><td>			<input id="ent8" 		type="text" tabindex="9"  mask="int1"	holder_="" placeholder_="9"	max="10000000"				min="2011" 			/>			</td><td>10000000</td></tr>
+<tr><td>Entero</td><td>			<input id="ent9" 		type="text" tabindex="9"  mask="int1"	holder_="" placeholder_="9"	max="100000000"				min="2011" 			/>			</td><td>100000000</td></tr>
+<tr><td>Entero</td><td>			<input id="ent10" 		type="text" tabindex="9"  mask="int1"	holder_="" placeholder_="9"	max="1000000000"			min="2011" 			/>			</td><td>1000000000</td></tr>
+<tr><td>Entero</td><td>			<input id="ent11" 		type="text" tabindex="9"  mask="int1"	holder_="" placeholder_="9"	max="10000000000"			min="2011" 			/>			</td><td>10000000000</td></tr>
+<tr><td>Entero</td><td>			<input id="ent12" 		type="text" tabindex="9"  mask="int1"	holder_="" placeholder_="9"	max="100000000000"			min="2011" 			/>			</td><td>100000000000</td></tr>
+<tr><td>Entero</td><td>			<input id="ent13" 		type="text" tabindex="9"  mask="int1"	holder_="" placeholder_="9"	max="1000000000000"			min="2011" 			/>			</td><td>1000000000000</td></tr>
+<tr><td>Entero</td><td>			<input id="ent14" 		type="text" tabindex="9"  mask="int1"	holder_="" placeholder_="9"	max="10000000000000"		min="2011" 			/>			</td><td>10000000000000</td></tr>
+<tr><td>Entero</td><td>			<input id="ent15" 		type="text" tabindex="9"  mask="int1"	holder_="" placeholder_="9"	max="100000000000000"		min="2011" 			/>			</td><td>100000000000000</td></tr>
+<tr><td>Entero</td><td>			<input id="ent16" 		type="text" tabindex="9"  mask="int1"	holder_="" placeholder_="9"	max="1000000000000000"		min="2011" 			/>			</td><td>1000000000000000</td></tr>
+<tr><td>Entero</td><td>			<input id="ent17" 		type="text" tabindex="9"  mask="int1"	holder_="" placeholder_="9"	max="10000000000000000"		min="2011" 			/>			</td><td>10000000000000000</td></tr>
+<tr><td>Cadena</td><td>			<input id="cade" 		type="text" tabindex="11" mask="cade"	holder_="" placeholder_="*"	max="100"							/>			</td><td>*</td></tr>
+</table>
+<div id="info"><a href="www.hiskasoft.com">www.hiskasoft.com</a></div>
+</body>
+</html>
